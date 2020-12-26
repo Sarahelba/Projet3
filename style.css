@@ -1,0 +1,92 @@
+/*--------HEADER---------------*/
+
+.logo img {
+  width: 280px;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  padding: 14px;
+}
+
+input {
+  border: none;
+  height: 28px;
+  background-color: #eaeaea;
+}
+
+.barrederecherche {
+  height: 50px;
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.barrederecherche i {
+  width: 30px;
+}
+/*-------------Réservez----------------------*/
+.presentation {
+  background-color: #f6f6f6;
+  height: 230px;
+  padding-top: 51px;
+}
+
+.presentation h1 {
+  font-size: 26px;
+  text-align: center;
+  margin-top: -21px;
+}
+h2 {
+  font-size: 16px;
+  text-align: center;
+  font-weight: lighter;
+  margin-bottom: 36px;
+}
+.bouton {
+  text-decoration: none;
+  background-image: linear-gradient(
+    to right top,
+    #cb69db,
+    #cc5bdf,
+    #cc4ae3,
+    #cc35e7,
+    #cb12eb
+  );
+  margin-left: 100px;
+  color: white;
+  padding: 14px;
+  border-radius: 31px;
+  border-radius: 31px;
+}
+/*-------------Fonctionnement--------*/
+.fonctionnement {
+  padding-top: 45px;
+}
+
+.bloc h3 {
+  text-align: center;
+}
+
+.bloc i {
+  margin-right: 10px;
+}
+
+.bloc {
+  border-radius: 10px;
+  padding: 22px;
+  width: 250px;
+  margin: 40px;
+  background-color: #eaeaea;
+  box-shadow: -9px 6px 15px 5px #cecece;
+}
+.bloc p {
+  position: absolute;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: purple;
+  width: 10px;
+  height: 10px;
+  left: 35px;
+}

@@ -1,4 +1,8 @@
 /*--------HEADER---------------*/
+#container {
+  display: flex;
+  flex-direction: column;
+}
 
 .logo img {
   width: 280px;
@@ -76,8 +80,8 @@ h2 {
 .bloc {
   border-radius: 10px;
   padding: 22px;
-  width: 250px;
-  margin: 40px;
+  width: 300px;
+  margin: 18px;
   background-color: #eaeaea;
   box-shadow: -9px 6px 15px 5px #cecece;
 }
@@ -93,7 +97,7 @@ h2 {
 /*-----Restaurant-----*/
 
 .restau img {
-  width: 300px;
+  width: 100%;
   object-fit: cover;
   height: 160px;
   border-top-left-radius: 7px;
@@ -116,16 +120,40 @@ h2 {
   background-color: #6eab9d;
   color: green;
   padding: 5px;
-  position: absolute;
-  right: 154px;
+  position: relative;
+  left: 235px;
+  top: 55px;
 }
 
 /*-----footer----*/
 footer {
   display: flex;
   flex-direction: column;
+  background-color: black;
+  display: flex;
 }
 
 footer a {
   text-decoration: none;
+  color: white;
+  line-height: 22px;
+  padding-left: 14px;
+}
+
+/*----------------------------------*/
+.heart {
+  width: 100px;
+  height: 66px;
+  position: relative;
+  background: url(https://cssanimation.rocks/images/posts/steps/heart.png)
+    no-repeat;
+  cursor: pointer;
+  animation: fave-heart 2s steps(28);
+
+  left: 200px;
+  bottom: 73px;
+}
+.heart:active {
+  background-position: -2800px 0;
+  transition: background 3s steps(28);
 }

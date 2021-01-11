@@ -58,15 +58,22 @@ h2 {
     #cc35e7,
     #cb12eb
   );
-  margin-left: 100px;
+
   color: white;
   padding: 14px;
   border-radius: 31px;
   border-radius: 31px;
 }
+
+.bouton1 {
+  justify-content: center;
+  display: flex;
+}
 /*-------------Fonctionnement--------*/
 .fonctionnement {
   padding-top: 45px;
+  display: grid;
+  justify-content: center;
 }
 
 .bloc h3 {
@@ -84,6 +91,7 @@ h2 {
   margin: 18px;
   background-color: #eaeaea;
   box-shadow: -9px 6px 15px 5px #cecece;
+  position: relative;
 }
 .bloc p {
   position: absolute;
@@ -92,9 +100,14 @@ h2 {
   background-color: purple;
   width: 10px;
   height: 10px;
-  left: 35px;
+  right: 328px;
 }
 /*-----Restaurant-----*/
+
+#restaurant {
+  display: grid;
+  justify-content: center;
+}
 
 .restau img {
   width: 100%;
@@ -110,6 +123,7 @@ h2 {
   border-radius: 7px;
   margin-bottom: 40px;
   height: 220px;
+  position: relative;
 }
 
 .restau figcaption {
@@ -121,9 +135,9 @@ h2 {
   background-color: #6eab9d;
   color: green;
   padding: 5px;
-  position: relative;
-  left: 235px;
-  top: 55px;
+  position: absolute;
+  left: 220px;
+  bottom: 161px;
 }
 
 /*-----footer----*/
@@ -137,12 +151,14 @@ footer {
 footer a {
   text-decoration: none;
   color: white;
-  line-height: 22px;
-  padding-left: 14px;
+  padding: 4px;
+  padding-left: 24px;
 }
+
 footer img {
   width: 100px;
-  padding-left: 14px;
+  padding: 4px;
+  padding-left: 24px;
 }
 /*----------------------------------*/
 .heart {
@@ -157,7 +173,7 @@ footer img {
   left: 200px;
   bottom: 73px;
 }
-.heart:active {
+.heart:hover {
   background-position: -2800px 0;
   transition: background 3s steps(28);
 }

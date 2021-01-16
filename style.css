@@ -1,4 +1,7 @@
 /*--------HEADER---------------*/
+body {
+  font-family: "Roboto", sans-serif;
+}
 #container {
   display: flex;
   flex-direction: column;
@@ -51,14 +54,14 @@ h2 {
 .bouton {
   text-decoration: none;
   background-image: linear-gradient(
-    to right top,
-    #cb69db,
-    #cc5bdf,
-    #cc4ae3,
-    #cc35e7,
-    #cb12eb
+    to right bottom,
+    #ff79da,
+    #e86edb,
+    #cf64dc,
+    #b35cdc,
+    #9356dc
   );
-
+  box-shadow: 0px 6px 15px 5px #cecece;
   color: white;
   padding: 14px;
   border-radius: 31px;
@@ -89,7 +92,7 @@ h2 {
   padding: 22px;
   width: 300px;
   margin: 18px;
-  background-color: #eaeaea;
+  background-color: #f6f6f6;
   box-shadow: -9px 6px 15px 5px #cecece;
   position: relative;
 }
@@ -97,10 +100,15 @@ h2 {
   position: absolute;
   border-radius: 20px;
   padding: 10px;
-  background-color: purple;
+  background-color: #9458dd;
   width: 10px;
   height: 10px;
   right: 328px;
+  color: white;
+}
+
+.number {
+  color: white;
 }
 /*-----Restaurant-----*/
 
@@ -179,5 +187,5 @@ footer img {
 }
 
 .bloc:hover {
-  background-color: blueviolet;
+  background-color: #f6edff;
 }

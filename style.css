@@ -20,9 +20,9 @@ body {
   right: 0;
   bottom: 0;
 
-  -webkit-animation: spin 3s linear infinite;
-  -o-animation: spin 3s linear infinite;
-  animation: spin 3s linear infinite;
+  -webkit-animation: spin 1s linear infinite;
+  -o-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
 }
 
 /* Animation du loader */
@@ -30,8 +30,10 @@ body {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
+    opacity: 0;
   }
 }
 /******compatible******/
@@ -45,6 +47,8 @@ body {
 }
 
 /********************/
+
+/****************/
 
 #container {
   display: flex;

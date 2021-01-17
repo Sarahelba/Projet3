@@ -18,8 +18,12 @@ body {
 
 .logo1 i {
   position: relative;
-  right: 30px;
+  right: 64px;
   top: 10px;
+}
+
+.title {
+  height: 10px;
 }
 /*----------------*/
 h1 {
@@ -36,12 +40,15 @@ h1 {
 /**********************************/
 
 .plat {
-  border-radius: 10px;
+  border-radius: 15px;
   box-shadow: -9px 6px 15px 5px #cecece;
   padding: 12px;
 }
 h2 {
   font-weight: lighter;
+  /* border-bottom: 4px solid #99e2d0;  trait trop long*/
+  margin-right: 15em;
+  margin-bottom: 30px;
 }
 
 h3 {
@@ -52,6 +59,7 @@ h3 {
 .plat p {
   margin-bottom: 0px;
   margin-top: 0px;
+  font-weight: lighter;
 }
 
 .prix {
@@ -59,15 +67,26 @@ h3 {
   float: right;
   font-weight: bold;
 }
+
+#plats {
+  margin-top: 70px;
+}
+
+.desserts {
+  margin-top: 70px;
+}
+
+.entrees {
+  margin-top: 70px;
+}
 .bouton {
-  text-decoration: none;
   background-image: linear-gradient(
-    to right top,
-    #cb69db,
-    #cc5bdf,
-    #cc4ae3,
-    #cc35e7,
-    #cb12eb
+    to right bottom,
+    #ff79da,
+    #e86edb,
+    #cf64dc,
+    #b35cdc,
+    #9356dc
   );
   color: white;
   padding: 20px;
@@ -85,28 +104,35 @@ h3 {
 
 .bouton1 a {
   text-align: center;
+  text-decoration: none;
 }
 
 /*-----footer----*/
 footer {
   display: flex;
   flex-direction: column;
-  background-color: black;
+  background-color: #353535;
   display: flex;
+  padding-bottom: 32px;
 }
 
 footer a {
   text-decoration: none;
   color: white;
-  padding: 4px;
-  padding-left: 24px;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+footer i {
+  padding-right: 7px;
 }
 
 footer img {
   width: 100px;
-  padding: 4px;
-  padding-left: 24px;
+  padding-left: 30px;
+  padding-top: 36px;
+  padding-bottom: 17px;
 }
+/*----------------------------------*/
 
 /*------coeur-----*/
 .heart {
@@ -118,10 +144,173 @@ footer img {
   cursor: pointer;
   animation: fave-heart 2s steps(28);
 
-  left: 246px;
-  bottom: 73px;
+  left: 296px;
+  bottom: 89px;
 }
 .heart:hover {
   background-position: -2800px 0;
   transition: background 3s steps(28);
+}
+/***************************************/
+/*animation progressive*/
+.entrees {
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari et Chrome */
+  -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  /* sur Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* sur Safari et Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  /* sur Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.desserts {
+  animation: fadein 6s;
+  -moz-animation: fadein 6s; /* Firefox */
+  -webkit-animation: fadein 6s; /* Safari et Chrome */
+  -o-animation: fadein 6s; /* Opera */
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  /* sur Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* sur Safari et Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  /* sur Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#plats {
+  animation: fadein 4s;
+  -moz-animation: fadein 4s; /* Firefox */
+  -webkit-animation: fadein 4s; /* Safari et Chrome */
+  -o-animation: fadein 4s; /* Opera */
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  /* sur Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* sur Safari et Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  /* sur Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* Styles pour cette Media Queries */
+
+  .entrees {
+    display: flex;
+    justify-content: center;
+  }
+
+  .plat {
+    margin-left: 40px;
+  }
+  h1 {
+    text-align: center;
+  }
+  h2 {
+    margin-right: 0;
+  }
+
+  #plats {
+    display: flex;
+    justify-content: center;
+  }
+  .desserts {
+    display: flex;
+    justify-content: center;
+  }
+  #fond {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+  }
+  footer {
+    align-items: center;
+  }
 }

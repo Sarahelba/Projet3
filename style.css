@@ -39,12 +39,24 @@ input {
   height: 230px;
   padding-top: 51px;
 }
+h1 {
+  font-weight: bold;
+  font-size: 29px;
+}
 
 .presentation h1 {
   font-size: 26px;
   text-align: center;
   margin-top: -21px;
 }
+
+.fonctionnement h1 {
+  margin-left: -160px;
+}
+#restaurant h1 {
+  margin-left: -160px;
+}
+
 h2 {
   font-size: 16px;
   text-align: center;
@@ -75,8 +87,11 @@ h2 {
 /*-------------Fonctionnement--------*/
 .fonctionnement {
   padding-top: 45px;
-  display: grid;
+  display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
 }
 
 .bloc h3 {
@@ -97,22 +112,31 @@ h2 {
   position: relative;
 }
 
-.bloc p {
+.number {
   position: absolute;
   border-radius: 20px;
   padding: 10px;
   background-color: #9458dd;
-  width: 10px;
-  height: 10px;
-  right: 328px;
-  color: white;
+  width: 20px;
+  height: 20px;
+  right: 322px;
+  bottom: 31px;
 }
 
+.number p {
+  margin-left: 5px;
+  color: white;
+  margin-top: 1px;
+  margin-bottom: 0px;
+}
 /*-----Restaurant-----*/
 
 #restaurant {
-  display: grid;
+  display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f6f6f6;
 }
 
 .restau img {
@@ -204,4 +228,30 @@ footer img {
 
 .bloc:hover {
   background-color: #f6edff;
+}
+/************************************************/
+@media only screen and (min-width: 1024px) {
+  /* Styles pour cette Media Queries */
+  .fonctionnement {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .fonctionnement h1 {
+    margin-right: 29em;
+    margin-left: 40px;
+  }
+
+  #restaurant {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #restaurant h1 {
+    margin-left: 0;
+    margin-right: 29em;
+  }
+  footer {
+    align-items: center;
+  }
 }

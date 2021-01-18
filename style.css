@@ -1,4 +1,3 @@
-/*--------HEADER---------------*/
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -20,9 +19,9 @@ body {
   right: 0;
   bottom: 0;
 
-  -webkit-animation: spin 1s linear infinite;
-  -o-animation: spin 1s linear infinite;
-  animation: spin 1s linear infinite;
+  -webkit-animation: spin 3s linear infinite;
+  -o-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
 }
 
 /* Animation du loader */
@@ -30,10 +29,8 @@ body {
   0% {
     transform: rotate(0deg);
   }
-
   100% {
     transform: rotate(360deg);
-    opacity: 0;
   }
 }
 /******compatible******/
@@ -48,13 +45,10 @@ body {
 
 /********************/
 
-/****************/
-
 #container {
   display: flex;
   flex-direction: column;
 }
-
 .logo img {
   width: 280px;
 }
@@ -63,13 +57,11 @@ body {
   justify-content: center;
   padding: 14px;
 }
-
 input {
   border: none;
   height: 28px;
   background-color: #eaeaea;
 }
-
 .barrederecherche {
   height: 50px;
   background-color: #eaeaea;
@@ -77,7 +69,6 @@ input {
   justify-content: center;
   padding-top: 10px;
 }
-
 .barrederecherche i {
   width: 30px;
 }
@@ -91,20 +82,17 @@ h1 {
   font-weight: bold;
   font-size: 29px;
 }
-
 .presentation h1 {
   font-size: 26px;
   text-align: center;
   margin-top: -21px;
 }
-
 .fonctionnement h1 {
   margin-left: -160px;
 }
 #restaurant h1 {
   margin-left: -160px;
 }
-
 h2 {
   font-size: 16px;
   text-align: center;
@@ -127,7 +115,6 @@ h2 {
   border-radius: 31px;
   border-radius: 31px;
 }
-
 .bouton1 {
   justify-content: center;
   display: flex;
@@ -141,15 +128,12 @@ h2 {
   align-items: center;
   margin-bottom: 100px;
 }
-
 .bloc h3 {
   text-align: center;
 }
-
 .bloc i {
   margin-right: 10px;
 }
-
 .bloc {
   border-radius: 10px;
   padding: 22px;
@@ -159,7 +143,6 @@ h2 {
   box-shadow: -9px 6px 15px 5px #cecece;
   position: relative;
 }
-
 .number {
   position: absolute;
   border-radius: 20px;
@@ -170,7 +153,6 @@ h2 {
   right: 322px;
   bottom: 31px;
 }
-
 .number p {
   margin-left: 5px;
   color: white;
@@ -178,7 +160,6 @@ h2 {
   margin-bottom: 0px;
 }
 /*-----Restaurant-----*/
-
 #restaurant {
   display: flex;
   justify-content: center;
@@ -186,7 +167,6 @@ h2 {
   align-items: center;
   background-color: #f6f6f6;
 }
-
 .restau img {
   width: 100%;
   object-fit: cover;
@@ -194,7 +174,6 @@ h2 {
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
 }
-
 .restau {
   width: 350px;
   box-shadow: 0px 12px 14px 0px #adadad;
@@ -203,7 +182,6 @@ h2 {
   height: 236px;
   position: relative;
 }
-
 .restau figcaption {
   padding: 12px;
 }
@@ -238,7 +216,6 @@ footer {
   display: flex;
   padding-bottom: 32px;
 }
-
 footer a {
   text-decoration: none;
   color: white;
@@ -248,7 +225,6 @@ footer a {
 footer i {
   padding-right: 7px;
 }
-
 footer img {
   width: 100px;
   padding-left: 30px;
@@ -264,16 +240,13 @@ footer img {
     no-repeat;
   cursor: pointer;
   animation: fave-heart 2s steps(28);
-
   left: 254px;
   bottom: 87px;
 }
-
 .heart:hover {
   background-position: -2800px 0;
   transition: background 3s steps(28);
 }
-
 .bloc:hover {
   background-color: #f6edff;
 }
@@ -284,17 +257,14 @@ footer img {
     flex-direction: row;
     flex-wrap: wrap;
   }
-
   .fonctionnement h1 {
     margin-right: 29em;
     margin-left: 40px;
   }
-
   #restaurant {
     flex-direction: row;
     flex-wrap: wrap;
   }
-
   #restaurant h1 {
     margin-left: 0;
     margin-right: 29em;

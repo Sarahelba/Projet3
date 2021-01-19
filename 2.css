@@ -25,11 +25,18 @@ body {
 }
 
 .title {
-  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 /*----------------*/
 h1 {
   font-family: "Shrikhand", cursive;
+  font-size: 50px;
+}
+header h1 {
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 /*---------Container------------*/
 .container {
@@ -43,14 +50,26 @@ h1 {
 
 .plat {
   border-radius: 15px;
-  box-shadow: -9px 6px 15px 5px #cecece;
-  padding: 12px;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 2em;
+  margin: 1rem 0;
 }
 h2 {
   font-weight: lighter;
-  border-bottom: 4px solid #99e2d0;
-  margin-right: 15em;
   margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+/***********effet en dessous du h2***********/
+h2:after {
+  content: "";
+  width: 3rem;
+  height: 0.25rem;
+  background-color: #99e2d0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 h3 {
@@ -65,10 +84,10 @@ h3 {
 }
 
 .prix {
-  margin-top: -30px;
+  margin-top: -21px;
   float: right;
   font-weight: bold;
-  font-size: 29px;
+  font-size: 22px;
 }
 
 #plats {
@@ -79,9 +98,6 @@ h3 {
   margin-top: 70px;
 }
 
-.entrees {
-  margin-top: 70px;
-}
 .bouton {
   background-image: linear-gradient(
     to right bottom,
@@ -141,15 +157,12 @@ footer img {
 .heart {
   width: 100px;
   height: 65px;
-  position: relative;
   background: url(https://cssanimation.rocks/images/posts/steps/heart.png)
     no-repeat;
   cursor: pointer;
   animation: fave-heart 2s steps(28);
-
-  left: 296px;
-  bottom: 89px;
 }
+
 .heart:hover {
   background-position: -2800px 0;
   transition: background 3s steps(28);
@@ -285,34 +298,48 @@ footer img {
 @media only screen and (min-width: 1024px) {
   /* Styles pour cette Media Queries */
 
-  .entrees {
+  .soussection {
     display: flex;
     justify-content: center;
+    flex-direction: column;
   }
 
-  .plat {
-    margin-left: 40px;
-  }
-  h1 {
-    text-align: center;
-  }
-  h2 {
-    margin-right: 0;
-  }
-
-  #plats {
-    display: flex;
-    justify-content: center;
-  }
-  .desserts {
-    display: flex;
-    justify-content: center;
-  }
   #fond {
     width: 100%;
     object-fit: cover;
     height: 300px;
   }
+
+  .plat {
+    margin-right: 40px;
+    margin-bottom: 30px;
+    width: 300px;
+  }
+
+  .entrees {
+    margin-top: 0;
+  }
+
+  #plats {
+    margin-top: 0;
+  }
+  .prix {
+    font-size: 18px;
+  }
+  .desserts {
+    margin-top: 0;
+  }
+  #mediaquery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+
+  #fond {
+    height: 400px;
+  }
+
   footer {
     align-items: center;
   }

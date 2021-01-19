@@ -40,15 +40,15 @@ body {
 
 /********************/
 .loader__item--1 {
-  background-color: pink;
+  background-color: #9356dc;
 }
 .loader__item--2 {
-  background-color: blue;
+  background-color: #ff79da;
   animation-delay: 0.25s;
 }
 
 .loader__item--3 {
-  background-color: purple;
+  background-color: #99e2d0;
   animation-delay: 0.5s;
 }
 
@@ -133,10 +133,10 @@ h1 {
   margin-top: -21px;
 }
 .fonctionnement h1 {
-  margin-left: -160px;
+  margin-left: 100px;
 }
 #restaurant h1 {
-  margin-left: -160px;
+  margin-left: 100px;
 }
 h2 {
   font-size: 16px;
@@ -167,10 +167,7 @@ h2 {
 /*-------------Fonctionnement--------*/
 .fonctionnement {
   padding-top: 45px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+
   margin-bottom: 100px;
 }
 .bloc h3 {
@@ -206,10 +203,6 @@ h2 {
 }
 /*-----Restaurant-----*/
 #restaurant {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
   background-color: #f6f6f6;
 }
 .restau img {
@@ -253,6 +246,22 @@ a {
   text-decoration: none;
   color: black;
 }
+
+.soussection {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.soussection2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
 /*-----footer----*/
 footer {
   display: flex;
@@ -298,21 +307,27 @@ footer img {
 /************************************************/
 @media only screen and (min-width: 1024px) {
   /* Styles pour cette Media Queries */
-  .fonctionnement {
-    flex-direction: row;
+  .soussection2 {
     flex-wrap: wrap;
-  }
-  .fonctionnement h1 {
-    margin-right: 29em;
-    margin-left: 40px;
-  }
-  #restaurant {
     flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 0;
   }
-  #restaurant h1 {
-    margin-left: 0;
-    margin-right: 29em;
+
+  .soussection {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .restau {
+    width: 450px;
+  }
+  .new {
+    left: 335px;
+  }
+  .heart {
+    left: 350px;
   }
   footer {
     align-items: center;

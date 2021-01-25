@@ -165,32 +165,6 @@ footer img {
 }
 /*----------------------------------*/
 /*animation prix*/
-.menuItem__confirmation {
-  background-color: #99e2d0;
-  margin: -1rem -5rem -1rem 1rem;
-  width: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition-duration: 0.5s;
-}
-
-.menuItem__wrapIcon {
-  height: 1.6rem;
-  width: 1.6rem;
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100px;
-  transform: rotate(180deg);
-  transition-duration: 0.5s;
-}
-
-.menuItem__icon {
-  color: #99e2d0;
-}
-
 .menuItem {
   background-color: white;
   padding: 1rem;
@@ -206,6 +180,10 @@ footer img {
   transform: scale(0);
   max-width: 100%;
 }
+
+
+
+
 
 /*********************************/
 /*------coeur-----*/

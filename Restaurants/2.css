@@ -3,11 +3,13 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
 }
+
 #fond {
   width: 100%;
   object-fit: cover;
   height: 250px;
 }
+
 #logo {
   width: 250px;
 }
@@ -26,13 +28,21 @@ body {
 
 .title {
   display: flex;
-
+  align-items: center;
   justify-content: space-between;
 }
+
+.itemprix {
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 0.5rem;
+  margin-top: -16px;
+}
+
 /*----------------*/
 h1 {
   font-family: "Shrikhand", cursive;
-  font-size: 30px;
+  font-size: 40px;
 }
 header h1 {
   margin-bottom: 0px;
@@ -54,7 +64,6 @@ header h1 {
   padding: 1em;
   margin: 1rem 0;
 }
-
 h2 {
   font-weight: lighter;
   margin-bottom: 30px;

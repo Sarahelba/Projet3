@@ -2,6 +2,8 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
 #fond {
@@ -32,24 +34,18 @@ body {
   justify-content: space-between;
 }
 
-.itemprix {
-  display: flex;
-  justify-content: flex-end;
-  padding-left: 0.5rem;
-  margin-top: -16px;
-}
-
 /*----------------*/
 h1 {
   font-family: "Shrikhand", cursive;
   font-size: 36px;
+  margin-left: 10px;
 }
 
 header h1 {
   margin-bottom: 0px;
   margin-top: 0px;
 }
-/*---------Container------------*/
+
 .container {
   border-radius: 64px;
   margin-top: -61px;
@@ -57,59 +53,15 @@ header h1 {
   background-color: white;
   padding: 19px;
 }
-/**********************************/
-
-.plat {
-  border-radius: 15px;
-  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
-  padding: 1em;
-  margin: 1rem 0;
+/*---------Body------------*/
+.container {
+  padding-left: 0px;
+  padding-right: 0px;
 }
-
-h2 {
-  font-weight: lighter;
-  margin-bottom: 30px;
-  position: relative;
-  padding-bottom: 0.5rem;
+.media {
+  margin: 35px;
 }
-
-/***********effet en dessous du h2***********/
-h2:after {
-  content: "";
-  width: 3rem;
-  height: 0.25rem;
-  background-color: #99e2d0;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-
-h3 {
-  margin-bottom: 5px;
-  margin-top: 5px;
-}
-
-.plat p {
-  margin-bottom: 0px;
-  margin-top: 0px;
-  font-weight: lighter;
-}
-
-.prix {
-  margin-top: -21px;
-  float: right;
-  font-weight: bold;
-  font-size: 15px;
-}
-
-#plats {
-  margin-top: 70px;
-}
-
-.desserts {
-  margin-top: 70px;
-}
-
+/*********************************/
 .bouton {
   background-image: linear-gradient(
     to right bottom,
@@ -166,6 +118,86 @@ footer img {
 /*----------------------------------*/
 /*animation prix*/
 
+.menu h2 {
+  font-weight: 200;
+}
+.menu h2::after {
+  display: block;
+  content: "";
+  height: 3px;
+  width: 30px;
+  background: #99e2d0;
+}
+.menu .menu-card {
+  cursor: pointer;
+  background-color: white;
+  position: relative;
+  border-radius: 12px;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  display: flex;
+  overflow: hidden;
+}
+.menu .menu-card:hover .check {
+  width: 25%;
+}
+.menu .menu-card:hover .check > .fa-check-circle {
+  opacity: 1;
+  animation: rotation 2s linear;
+}
+.menu .choice {
+  width: 100%;
+  padding: 0 10px;
+  display: grid;
+  grid-template-rows: 20px;
+  grid-template-columns: auto auto;
+  grid-template-areas: "text1 ." "text2 price";
+}
+.menu .choice p {
+  display: block;
+}
+.menu .choice p:nth-child(1) {
+  grid-area: text1;
+  font-weight: 700;
+}
+.menu .choice p:nth-child(2) {
+  grid-area: text2;
+  font-weight: 200;
+}
+.menu .choice p:nth-child(3) {
+  grid-area: price;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.check {
+  transition: width 0.5s linear;
+  width: 0;
+  right: 0;
+  background-color: #99e2d0;
+  color: white;
+  border-radius: 0 12px 12px 0;
+  cursor: pointer;
+  justify-content: center;
+  transform-origin: right center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+@keyframes rotation {
+  from {
+    z-index: 1;
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  to {
+    z-index: 1;
+    transform: rotate(360deg);
+  }
+}
 /*********************************/
 /*------coeur-----*/
 .heart {
@@ -183,7 +215,7 @@ footer img {
 }
 /***************************************/
 /*animation progressive*/
-.entrees {
+.menu {
   animation: fadein 2s;
   -moz-animation: fadein 2s; /* Firefox */
   -webkit-animation: fadein 2s; /* Safari et Chrome */
@@ -225,101 +257,8 @@ footer img {
   }
 }
 
-.desserts {
-  animation: fadein 6s;
-  -moz-animation: fadein 6s; /* Firefox */
-  -webkit-animation: fadein 6s; /* Safari et Chrome */
-  -o-animation: fadein 6s; /* Opera */
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-moz-keyframes fadein {
-  /* sur Firefox */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadein {
-  /* sur Safari et Chrome */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-o-keyframes fadein {
-  /* sur Opera */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-#plats {
-  animation: fadein 4s;
-  -moz-animation: fadein 4s; /* Firefox */
-  -webkit-animation: fadein 4s; /* Safari et Chrome */
-  -o-animation: fadein 4s; /* Opera */
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-moz-keyframes fadein {
-  /* sur Firefox */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadein {
-  /* sur Safari et Chrome */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-o-keyframes fadein {
-  /* sur Opera */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 @media only screen and (min-width: 1024px) {
   /* Styles pour cette Media Queries */
-  h1 {
-    font-size: 30px;
-  }
-
-  .soussection {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
 
   #fond {
     width: 100%;
@@ -327,37 +266,24 @@ footer img {
     height: 300px;
   }
 
-  .plat {
-    margin-right: 40px;
-    margin-bottom: 30px;
-    width: 300px;
+  footer {
+    align-items: center;
   }
 
-  .entrees {
-    margin-top: 0;
-  }
-
-  #plats {
-    margin-top: 0;
-  }
-  .prix {
-    font-size: 15px;
-  }
-  .desserts {
-    margin-top: 0;
-  }
-  #mediaquery {
+  .media {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+  }
+
+  .menu .choice {
+    width: 350px;
+  }
+
+  .media {
     justify-content: center;
   }
 
-  #fond {
-    height: 400px;
-  }
-
-  footer {
-    align-items: center;
+  .menu {
+    margin-left: 25px;
   }
 }

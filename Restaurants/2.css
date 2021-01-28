@@ -130,13 +130,12 @@ footer img {
 }
 .menu .menu-card {
   cursor: pointer;
-  background-color: white;
+  background-color: #fff;
   position: relative;
   border-radius: 12px;
   box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.1);
   margin: 20px 0;
   display: flex;
-  overflow: hidden;
 }
 .menu .menu-card:hover .check {
   width: 25%;
@@ -151,7 +150,9 @@ footer img {
   display: grid;
   grid-template-rows: 20px;
   grid-template-columns: auto auto;
-  grid-template-areas: "text1 ." "text2 price";
+  grid-template-areas:
+    "text1 ."
+    "text2 price";
 }
 .menu .choice p {
   display: block;
@@ -159,10 +160,18 @@ footer img {
 .menu .choice p:nth-child(1) {
   grid-area: text1;
   font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: -12px;
 }
 .menu .choice p:nth-child(2) {
   grid-area: text2;
   font-weight: 200;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 10px;
 }
 .menu .choice p:nth-child(3) {
   grid-area: price;
@@ -216,11 +225,12 @@ footer img {
 /***************************************/
 /*animation progressive*/
 .menu {
-  animation: fadein 2s;
-  -moz-animation: fadein 2s; /* Firefox */
-  -webkit-animation: fadein 2s; /* Safari et Chrome */
-  -o-animation: fadein 2s; /* Opera */
+  animation: fadein 6s;
+  -moz-animation: fadein 4s; /* Firefox */
+  -webkit-animation: fadein 4s; /* Safari et Chrome */
+  -o-animation: fadein 4s; /* Opera */
 }
+
 @keyframes fadein {
   from {
     opacity: 0;
